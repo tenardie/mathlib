@@ -4,9 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github</groupId>
+    <groupId>xyz.ylmzr</groupId>
     <artifactId>MathLib</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
+
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Simple Math Functions</description>
+    <url>https://tenardie.github.io/MathLib/</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,22 +20,16 @@
         <maven.compiler.target>16</maven.compiler.target>
     </properties>
 
-    <profiles>
-        <profile>
+    <scm>
+        <connection>scm:git:https://github.com/tenardie/mathlib.git</connection>
+        <developerConnection>scm:git:https://github.com/tenardie/mathlib.git</developerConnection>
+    </scm>
+
+    <distributionManagement>
+        <repository>
             <id>github</id>
-            <activation>
-                <property>
-                    <name>useGitHubPackages</name>
-                    <value>true</value>
-                </property>
-            </activation>
-            <distributionManagement>
-                <repository>
-                    <id>github</id>
-                    <name>GitHub Packages</name>
-                    <url>https://maven.pkg.github.com/tenardie/mathlib</url>
-                </repository>
-            </distributionManagement>
-        </profile>
-    </profiles>
+            <name>GitHub tenardie Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/tenardie/mathlib</url>
+        </repository>
+    </distributionManagement>
 </project>
