@@ -5,8 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>xyz.ylmzr</groupId>
-    <artifactId>MathLib</artifactId>
+    <artifactId>mathlib</artifactId>
     <version>1.0</version>
+    <packaging>jar</packaging>
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>Simple Math Functions</description>
